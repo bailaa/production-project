@@ -5,7 +5,8 @@
         "outDir": "./build/",
         // Подсвечивает все места где не указан тип
         "noImplicitAny": true,
-        "module": "es6",
+        // "module": "es6",
+        "module": "esnext",
         // в какую спецификацию компилируем: для поддержки большинства браузеров
         "target": "es5",
         "jsx": "react-jsx",
