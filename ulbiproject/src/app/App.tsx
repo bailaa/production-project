@@ -18,7 +18,6 @@ const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
-                <LangSwitcher />
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
