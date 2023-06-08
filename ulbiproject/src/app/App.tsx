@@ -14,6 +14,7 @@ function App() {
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
+          'bla'
           <Sidebar />
           <AppRouter />
         </div>
