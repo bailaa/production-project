@@ -1,9 +1,9 @@
 name: linting, testing, building
 on:
   push:
-    branches: [ master, develop ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ master ]
 jobs:
   pipeline:
     runs-on: windows-22H2
