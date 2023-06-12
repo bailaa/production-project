@@ -5,23 +5,23 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 import { ErrorPage } from 'widgets/ErrorPage/ui/ErrorPage';
 
 const meta: Meta<typeof ErrorPage> = {
-    title: 'widget/ErrorPage',
-    component: ErrorPage,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+  title: 'widget/ErrorPage',
+  component: ErrorPage,
+  tags: ['autodocs'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof ErrorPage>;
 
 export const Light: Story = {
-    args: {},
+  args: {},
 };
 
 export const Dark: Story = {
-    args: {},
+  args: {},
 };
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

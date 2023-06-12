@@ -1,14 +1,12 @@
-import 'app/styles/index.scss'
+import 'app/styles/index.scss';
 import { Decorator } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
 
-const RouteDecorator: Decorator = (Story) => {
-    return (
-        <BrowserRouter>
-            <Story/>;
-        </BrowserRouter>
-    )
-};
+const RouteDecorator: Decorator = (Story) => (
+  <BrowserRouter>
+    <Story />
+    ;
+  </BrowserRouter>
+);
 
 export default RouteDecorator;
-

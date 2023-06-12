@@ -5,26 +5,26 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 
 const meta: Meta<typeof ThemeSwitcher> = {
-    title: 'shared/ThemeSwitcher',
-    component: ThemeSwitcher,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
-    }
+  title: 'shared/ThemeSwitcher',
+  component: ThemeSwitcher,
+  tags: ['autodocs'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+  args: {
+    to: '/',
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof ThemeSwitcher>;
 
 export const Normal: Story = {
-    args: {},
+  args: {},
 };
 
 export const Dark: Story = {
-    args: {},
+  args: {},
 };
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
