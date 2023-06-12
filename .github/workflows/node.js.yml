@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: 'package-lock.json'
+        cache-dependency-path: 'production-project/package-lock.json'
     - name: install modules
       run: npm install
     - name: build production project
