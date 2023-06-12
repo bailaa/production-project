@@ -5,47 +5,50 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { Dark } from 'widgets/Navbar/ui/Navbar.stories';
 
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
 const meta: Meta<typeof AppLink> = {
-    title: 'shared/AppLink',
-    component: AppLink,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-    args: {
-        to: '/',
-    }
+  title: 'shared/AppLink',
+  component: AppLink,
+  tags: ['autodocs'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+  args: {
+    to: '/',
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof AppLink>;
 
 export const Primary: Story = {
-    args: {
-        children: 'Text',
-        theme: AppLinkTheme.PRIMARY
-    },
+  args: {
+    children: 'Text',
+    theme: AppLinkTheme.PRIMARY,
+  },
 };
 
 export const PrimaryDark: Story = {
-    args: {
-        children: 'Text',
-        theme: AppLinkTheme.PRIMARY
-    },
+  args: {
+    children: 'Text',
+    theme: AppLinkTheme.PRIMARY,
+  },
 };
-PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)]
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Secondary: Story = {
-    args: {
-        children: 'Text',
-        theme: AppLinkTheme.SECONDARY
-    },
+  args: {
+    children: 'Text',
+    theme: AppLinkTheme.SECONDARY,
+  },
 };
 
 export const SecondaryDark: Story = {
-    args: {
-        children: 'Text',
-        theme: AppLinkTheme.SECONDARY
-    },
+  args: {
+    children: 'Text',
+    theme: AppLinkTheme.SECONDARY,
+  },
 };
-SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)]
+SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];

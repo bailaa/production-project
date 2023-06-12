@@ -5,23 +5,23 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 import { Sidebar } from 'widgets/Sidebar/ui';
 
 const meta: Meta<typeof Sidebar> = {
-    title: 'widget/Sidebar',
-    component: Sidebar,
-    tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+  title: 'widget/Sidebar',
+  component: Sidebar,
+  tags: ['autodocs'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof Sidebar>;
 
 export const Light: Story = {
-    args: {},
+  args: {},
 };
 
 export const Dark: Story = {
-    args: {},
+  args: {},
 };
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
