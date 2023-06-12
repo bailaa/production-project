@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
@@ -46,4 +45,3 @@ jobs:
         run: npm run storybook:build
       - name: screenshot testing
         run: npm run test:ui:ci
->>>>>>> origin/master
