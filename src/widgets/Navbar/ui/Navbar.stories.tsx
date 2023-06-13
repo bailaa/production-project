@@ -9,7 +9,7 @@ const meta: Meta<typeof Navbar> = {
   component: Navbar,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    /*backgroundColor: { control: 'color' },*/
   },
 };
 

@@ -13,7 +13,7 @@ const meta: Meta<typeof AppLink> = {
   component: AppLink,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    /* backgroundColor: { control: 'color' }, */
   },
   args: {
     to: '/',
