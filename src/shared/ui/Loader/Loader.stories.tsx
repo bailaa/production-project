@@ -9,10 +9,10 @@ const meta: Meta<typeof Loader> = {
   component: Loader,
   tags: ['autodocs'],
   argTypes: {
-    /*backgroundColor: { control: 'color' },*/
+    /* backgroundColor: { control: 'color' }, */
   },
   args: {
-    /*to: '/',*/
+    /* to: '/', */
   },
 };
 

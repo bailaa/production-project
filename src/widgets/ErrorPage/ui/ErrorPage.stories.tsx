@@ -9,7 +9,7 @@ const meta: Meta<typeof ErrorPage> = {
   component: ErrorPage,
   tags: ['autodocs'],
   argTypes: {
-    /*backgroundColor: { control: 'color' },*/
+    /* backgroundColor: { control: 'color' }, */
   },
 };
 
