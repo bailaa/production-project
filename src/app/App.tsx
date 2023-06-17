@@ -15,8 +15,6 @@ function App() {
         <Navbar />
         {/* eslint-disable-next-line i18next/no-literal-string */}
         <div className="content-page">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          'bla'
           <Sidebar />
           <AppRouter />
         </div>
