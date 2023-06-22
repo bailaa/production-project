@@ -6,6 +6,9 @@
 import path from 'path';
 
 export default {
+  globals: {
+    __IS_DEV__: true,
+  },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -46,6 +49,7 @@ export default {
   moduleNameMapper: {
     '\\.(s?css|less)$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    'entities/(.*)': '<rootDir>src/entities/$1',
   },
 
   // Indicates whether the coverage information should be collected while executing the test
