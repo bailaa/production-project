@@ -1,5 +1,4 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import { use } from 'i18next';
 
 export function buildCssLoader(isDev: boolean) {
   return {
